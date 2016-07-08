@@ -34,7 +34,7 @@ Future Development
 -------
 - PirateBox + Speaker Integration
 - Solar Power
-- Temperature Gague
+- Temperature Gauge
 - Wheels
 - Robotic / RC-controlled Base
 - Bottle Opener w/ Retractable Lanyard
