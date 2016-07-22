@@ -1,5 +1,5 @@
 /*********************
-PartyBobber v2.0 LCD Badge
+PartyBobber v2.0 LCD Shield
 
 Uses the Adafruit RGB Character LCD Shield and Library
 **********************/
@@ -11,14 +11,12 @@ Uses the Adafruit RGB Character LCD Shield and Library
 Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();
 
 #define ARRAY_SIZE 5
-char* strings[] = {"#TeamPedobear", "Team Awesome", "AwesomeParty2", "DefCon XXI", "BSidesLV"};
+char* strings[] = {"#TeamPedobear", "Pirate Box", "B33r H4x0rz", "DefCon XXI", "BSidesLV"};
 char* credits[] = {"By: VxHex & RobP", "FingerGarden.org"};
 char* pbob = "PartyBobber v2.0";
 boolean randomMode = false;
 
 void setup() {
-  //Serial.begin(9600);
-  
   lcd.begin(16, 2);
   lcd.print(credits[0]);
   lcd.setCursor(0, 1);
@@ -43,7 +41,7 @@ void loop() {
     lcd.print(pbob);
     lcd.setCursor(0,0);
     
-    //AwesomeParty 2
+    //B33r H4x
     if (buttons & BUTTON_UP) {
       lcd.print(strings[2]);
       randomMode = false;
@@ -53,7 +51,7 @@ void loop() {
       lcd.print(strings[3]);
       randomMode = false;
     }
-    //Team Awesome
+    //Pirate Box
     if (buttons & BUTTON_LEFT) {
       lcd.print(strings[1]);
       randomMode = false;
