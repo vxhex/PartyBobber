@@ -5,7 +5,7 @@ Uses the Adafruit RGB Character LCD Shield and Library
 **********************/
 
 #include <Wire.h>
-#include <Adafruit_MCP23017.h>
+#include <utility/Adafruit_MCP23017.h>
 #include <Adafruit_RGBLCDShield.h>
 
 Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();
